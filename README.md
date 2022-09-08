@@ -11,11 +11,16 @@ The experiments are conducted on one GPU (NVIDIA RTX 3090ti).
 - pytorch == 1.10
 
 ### Training and evaluation
-1. train the model
-CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/train.py --dataset ${DATASET} --splitBy ${SPLITBY} --exp_id ${EXP_ID}
+1. train the teacher model
+CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/train_teacher.py --dataset ${DATASET}$ --splitBy ${SPLITBY}$ --exp_id ${EXP_ID}$
 
-2. evaluate the model, and the acquired results with different settings are listed in output/easy_results.txt
+2. train the student model
+CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/train_student.py --dataset ${DATASET}$ --splitBy ${SPLITBY}$ --exp_id ${EXP_ID}$
+
+3. evaluate the model, and the acquired results with different settings are listed in output/easy_results.txt
 CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/eval.py --dataset ${DATASET} --splitBy ${SPLITBY} --split ${SPLIT} --id ${EXP_ID}
+
+${DATASET} = refcoco, refcoco+, refcocog. ${SPLITBY} = unc or google
 
 ### Acknowledgement
 The code is based on DTWREG (https://github.com/insomnia94/DTWREG).
