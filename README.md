@@ -12,10 +12,10 @@ The experiments are conducted on one GPU (NVIDIA RTX 3090ti).
 
 ### Training and evaluation
 1. train the teacher model
-CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/train_teacher.py --dataset ${DATASET}$ --splitBy ${SPLITBY}$ --exp_id ${EXP_ID}$
+CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/train_teacher.py --dataset ${DATASET} --splitBy ${SPLITBY} --exp_id ${EXP_ID}
 
 2. train the student model
-CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/train_student.py --dataset ${DATASET}$ --splitBy ${SPLITBY}$ --exp_id ${EXP_ID}$
+CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/train_student.py --dataset ${DATASET} --splitBy ${SPLITBY} --exp_id ${EXP_ID}
 
 3. evaluate the model, and the acquired results with different settings are listed in output/easy_results.txt
 CUDA_VISIBLE_DEVICES=${GPU_ID} python ./tools/eval.py --dataset ${DATASET} --splitBy ${SPLITBY} --split ${SPLIT} --id ${EXP_ID}
