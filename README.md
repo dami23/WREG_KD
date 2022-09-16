@@ -13,6 +13,7 @@ The experiments are conducted on one GPU (NVIDIA RTX 3090ti).
 1. follow the feature extraction in MattNet
 
 2. extract ann_pool5 and ann_fc7 feats using py27 + pytorch 0.4.1
+
 CUDA_VISIBLE_DEVICES={GPU_ID} python ./tools/extract_mrcn_ann_fc7_feats.py --dataset {DATASET} --splitBy {SPLITBY}
 
 ### Training and evaluation
