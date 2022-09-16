@@ -1,9 +1,9 @@
 PyTorch  code for ['Weakly Supervised Referring Expression Grounding via Target-Guided Knowledge Distillation']. This paper has been submitted to ICRA 2023.
 
 ### Preliminary
-1. Please refer to MattNet(https://github.com/lichengunc/MAttNet) to install mask-faster-rcnn, REFER and refer-parser2. Follow Step 1 & 2 in Training to prepare the data and features.
+1. Please refer to [MattNet](https://github.com/lichengunc/MAttNet) to install mask-faster-rcnn, REFER and refer-parser2. Follow Step 1 & 2 in Training to prepare the data and features.
 
-2. Please follow the step in DTWREG (https://github.com/insomnia94/DTWREG) to acquire the parsed discriminative triads.
+2. Please follow the step in [DTWREG] (https://github.com/insomnia94/DTWREG) to acquire the parsed discriminative triads.
 
 The experiments are conducted on one GPU (NVIDIA RTX 3090ti).
 
@@ -34,7 +34,7 @@ CUDA_VISIBLE_DEVICES={GPU_ID} python ./tools/eval.py --dataset {DATASET} --split
 The acquired results with different settings are listed in output/easy_results.txt
 
 ### Pretrained Models
-All pre-trained models and related data can be downloaded here (https://drive.google.com/file/d/1PiFWptVi_kZe_hS7VsnMX__8iqYd6UX6/view?usp=sharing).
+All pre-trained models and related data can be downloaded [here] (https://drive.google.com/file/d/1PiFWptVi_kZe_hS7VsnMX__8iqYd6UX6/view?usp=sharing).
 
 ### Acknowledgement
-The code is based on DTWREG (https://github.com/insomnia94/DTWREG).
+The code is based on DTWREG [(https://github.com/insomnia94/DTWREG)].
