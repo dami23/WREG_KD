@@ -18,12 +18,15 @@ CUDA_VISIBLE_DEVICES={GPU_ID} python ./tools/extract_mrcn_ann_fc7_feats.py --dat
 
 ### Training and evaluation
 1. train the teacher model
+
 CUDA_VISIBLE_DEVICES={GPU_ID} python ./tools/train_teacher.py --dataset {DATASET} --splitBy {SPLITBY} --exp_id {EXP_ID}
 
 2. train the student model
+
 CUDA_VISIBLE_DEVICES={GPU_ID} python ./tools/train_student.py --dataset {DATASET} --splitBy {SPLITBY} --exp_id {EXP_ID}
 
 3. evaluate the models,
+
 CUDA_VISIBLE_DEVICES={GPU_ID} python ./tools/eval.py --dataset {DATASET} --splitBy {SPLITBY} --split {SPLIT} --id {EXP_ID}
 
 {DATASET} = refcoco, refcoco+, refcocog. {SPLITBY} = unc for refcoco and refcoco+, google for refcocog.
