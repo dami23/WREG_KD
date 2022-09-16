@@ -37,4 +37,4 @@ The acquired results with different settings are listed in output/easy_results.t
 All pre-trained models and related data can be downloaded [here] (https://drive.google.com/file/d/1PiFWptVi_kZe_hS7VsnMX__8iqYd6UX6/view?usp=sharing).
 
 ### Acknowledgement
-The code is based on DTWREG [(https://github.com/insomnia94/DTWREG)].
+The code is based on [DTWREG] (https://github.com/insomnia94/DTWREG/).
