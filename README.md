@@ -14,7 +14,7 @@ The experiments are conducted on one GPU (NVIDIA RTX 3090ti).
 
 2. extract ann_pool5 and ann_fc7 feats using py27 + pytorch 0.4.1
 
-CUDA_VISIBLE_DEVICES={GPU_ID} python ./tools/extract_mrcn_ann_fc7_feats.py --dataset {DATASET} --splitBy {SPLITBY}
+   CUDA_VISIBLE_DEVICES={GPU_ID} python ./tools/extract_mrcn_ann_fc7_feats.py --dataset {DATASET} --splitBy {SPLITBY}
 
 ### Training and evaluation
 1. train the teacher model
