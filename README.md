@@ -1,4 +1,4 @@
-PyTorch  code for ['Weakly Supervised Referring Expression Grounding via Target-Guided Knowledge Distillation']. This paper has been submitted to ICRA 2023.
+PyTorch  code for ['Weakly Supervised Referring Expression Grounding via Target-Guided Knowledge Distillation']. This paper has been accepted by ICRA 2023.
 
 ### Preliminary
 1. Please refer to [MattNet](https://github.com/lichengunc/MAttNet) to install mask-faster-rcnn, REFER and refer-parser2. Follow Step 1 & 2 in Training to prepare the data and features.
